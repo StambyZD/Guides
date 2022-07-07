@@ -1,0 +1,82 @@
+Football Tactics Guide by Gorštak
+a) Pick mentality depending on central triangles..
+
+DM + MC + AMC present = defensive
+DM present = counter
+MC missing = standard
+DM missing = control
+DM + AMC missing = attacking
+
+b) Pick your duties by depending on fluidity
+
+highly structured = 0-1 support duties
+structured = 2-3 support duties
+flexible = 4-5 support duties
+fluid = 6-7 support duties
+very fluid = 8-9 support duties
+
+c) Pick your fluidity depending on lines in your formation missing (don't forget SW)
+
+0 lines missing = highly structured
+1 line missing = structured
+2 lines missing = flexible
+3 lines missing = fluid
+4 lines missing = very fluid
+
+e) Fluidity and mentality concerns
+
+more fluid = better individual quality, better teamwork, better decisions, more chances created, pressing defence, good with referee
+less fluid = focus on job at hand, soak up pressure defence, dumb player decisions that may result with penalties or cards
+more agressive = more shots, more injuries, worse fitness, good at crosses, susceptible to through balls, more shots converted to goals
+less agressive = fewer shots,  less injuries, better fitness, good at through balls, susceptible to crosses, you rarely score
+medium fluidity and mentality = no obvious pros, susceptible to set pieces, match outcome will likely be a draw
+
+f) Mentality efficiency
+
+Attacking = efficient at start of match
+Control = efficient between 20th to 40th minute
+Standard = efficient at around half time
+Counter = efficient between 60th to 80th minute
+Defensive = efficient at end of match
+
+g) Fluidity efficiency
+
+Very fluid = efficient at start of match
+Fluid = efficient between 20th and 40th minute
+Flexible = efficient around halftime
+Structured = efficient between 60th and 80th minute
+Highly structured = efficient at end of match
+
+h) When and where to use each fluidity
+
+fluid = Premier and Championship league
+flexible = League 1 and 2
+structured = conference leagues
+highly structured = amateur and sunday leagues
+
+i) Pick your most efficient spot depending on fluidity and mentality, and if that spot is occupied with a player, make sure he is top class.
+
+1a. highly stuructured = left
+1b. structured = central left
+1c. flexible = center
+1d. fluid = central right
+1e. very fluid = right
+
+2a. overload = GK
+2b. attacking = SW
+2c. control = CB
+2d. standard = DM
+2e. counter = MC
+2f. defensive = AMC
+2g. contain = ST
+
+j) How is it played out?
+
+a) offensive tactic = offensive tactic means you are pushing players up from deep. If you are remaining deep, lines must be straight so everyone has space.
+Players use agression to start on opponents and initiate a counter attack. Tempo is high, meaning players keep the ball shorter and passes are longer, direct.
+In offense, it resembles piggy in the middle style. Width is very wide, so you use it to stretch the opposition and create space to shoot. 
+You shoot from deep often, do crosses and make the opponent chase you around the pitch.
+
+b) Defensive tactic = Part of defense is to keep opponent far from your goal. So you play narrower, keep the ball longer, 
+dribble with the ball and create chance after chance in oponenents half. It looks as if you are dominating and is often mistaken for offensive tactic. 
+A DM is used as anchor to try to thwart counter attacks while your team is in opponents half.

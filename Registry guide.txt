@@ -1,0 +1,27 @@
+When opting to mess with registry, experts will tell you to create a backup of it, and do not mess with stuff you don't understand in it. I agree with those experts, as changing stuff you shouldn't can crash your system.
+
+With that said, you can look at a regular registry key and notice it has a name, and zeroes and the last number is not a zero, so let me clarify:
+
+DWORD is basically precision. The bigger the figure, the higher the precision. 16 bit operations were much less precise and much faster then 32 bit, and same goes for 64 bit. Meaning a 16 bit dword will execute a lot faster then 32 bit word and will be a shorter figure with less zeroes. Quantum cpus they talk about these days is something like 128 bit.
+
+The last number in the figure is the one that actually means something.
+
+number zero (0): It means windows will not manage this and leave it to hardware. If hardware is managing it, it is on, if not, it is off.
+
+number 1 (boot) : it means windows will run this when you start your device and manage it
+
+number 2: (delayed start) : it means windows will run this after windows system is loaded, not from boot
+
+number 3 : (manual start) : this can be very dangerous, as it will be be off until someone or something calls for it. It can help a malware service hide and not run all the time, or run itself when danger of discovery is over.
+
+number 4 : (disabled) : this means off. neither hardware, neither windows will run it.
+
+number 5 : (blocked) : this means the key is actively being blocked by the system.
+
+Google for other numbers meaning.
+
+In any case, if you created a key with for example 0000003 dword value, it means it's a 32 bit key with manual start.
+
+If, for example you created a key with dword value 4398413, it means it's a 32 bit key with manual start that will run with a delay of 439841 miliseconds.
+
+Hope this helps! Cheers!

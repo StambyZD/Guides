@@ -1,0 +1,171 @@
+Možda vam treba stabilan, minimalistički sistem,, kojeg po želji možete prošitriti u puni desktop, a da podržava sve živo? Ne morate debloatati windowse, treba vam samo mini.iso odavde:
+
+http://archive.ubuntu.com/ubuntu/dis...mages/netboot/
+
+Kad ste skinuli mini.iso sprzite ga sa rufusom na usb stick, ili ako ste na nekoj distro, ukucajte u terminal:
+
+sudo dd if=pathtoiso of=nameofusbdevice(sdb)
+
+Butajte sa sticka, obavite proces instalacije (preporucam non UEFI boot, MBR), i kad dodjete do opcija za dodatni softver, nemojte odabrati nista.
+
+Kad rebutate komp poslije instalacije, docekat ce vas crni ekran. To je zato sto ne postoji graficki interfejs. Pritisnite ctrl + alt + F1 da dobijete tty1 sucelje na kojem se mozete ulogirati. Sad mozete postaviti lozinku za najjaceg korisnika na uredjaju, root. On inace nema lozinku i ne mozete se ulogirati kao root ako ne postavite lozinku, sto je sigurnije no ako vam je potrebno, ukucajte:
+
+sudo passwd root
+
+Sad mozete skinuti pakete potrebne. Graficko sucelje npr. Ima ih gomila, kde, gnome, xfce, cinammon itd. Dakle utipkajte:
+
+sudo apt install xfce4
+
+Ako vam ne iskoci obavijest za managera grafickog sucelja, utipkajte:
+
+sudo apt install lightdm
+
+Nakon toga, podesite manager da se starta od buta sa:
+
+sudo dpkg-configure ligthdm
+
+Ako vas bude samo obavijestilo , odaberite lightdm. Na novim racunalima, drugi menadzeri mozda odbiju raditi, tako da je lightdm esencijalan.
+
+Sad mozete instalirati ceprkac. Utipkajte::
+
+sudo apt install firefox
+
+Ili:
+
+sudo apt install chromium-browser
+
+Kod linuxa je stvar takva da na osnovu sistema idu sami paketi. Trazite, nadjete paket, skinete ga i instalirate, te eventualno dependencije za doticni, takodjer u obliku paketa. Recimo da imate nvidia grafu i zelite nac najnoviji drajver, utipkate:
+
+sudo apt search nvidia-driver-*
+
+Da biste ga instalirali, utipkajte :
+
+sudo apt install nvidia-driver-435
+
+Ako u bilo koje vrijeme zelite uninstall obavit, utipkajte:
+
+sudo apt remove appname
+
+Gornja naredba se moze napisati i sa wildcards. Ovako:
+
+sudo apt remove nvidia*
+
+Ako zelite pocistiti i dependencije od neceg sto ste ununistalrali, utipkajte:
+
+sudo apt autoremove
+
+Linux trazi softver ovisno o arhivi repozitarija koje ste mu zadali. Da biste mogli dodati neki novi repozitorij, utipkajte:
+
+sudo apt install software-properties-common
+
+I da biste dodali novi repozitorij, utpikajte:
+
+sudo add-apt-repository multiverse
+
+Alternativni nacin gornjoj komandi je da rucno editirate txt datoteku koja sadrzi adrese repozitorija, sa nano editorom. Utipkajte:
+
+sudo nano /etc/apt/sources.list
+
+Kad obavite izmjene repozitorija, osvjezite sistem naredbom:
+
+sudo apt update
+
+AKo vam treba lista dostupnih paketa u svim repozitorijama koji su navedeni, utipkajte:
+
+sudo apt list
+
+Ne morate rucno traziti softver, samo skinite paket tipa synaptic ili ubuntu software center ili gnome software. To je app koji ce vam prikazati sav dostupan softver. Ako zelite rucno instalirati neki neprovjereni paket koji ste nasli negdje u bespucima interneta, trebat ce vam packet manager, tipa gdebi.
+
+sudo apt install gdebi
+
+Ako imate unmanaged mrezne uredjaje, mozete ukucati
+
+sudo nano /etc/NetworkManager/NetworkManager.conf
+
+I onda u tom fajlu natipkati:
+
+[keyfile]
+
+unmanaged-devices=none
+
+CTRL+O je snimanje, enter za potvrdu i CTRL+X za izlaz. Mozete napravit restart unmanaged mreznih uredjaja sa naredbom:
+
+sudo service network-manager restart
+
+I sad ide zabavan dio, Instalacija paketa. Ako zelite discord, on se instalira putem snapa, sto je nesto kao chocolattey na windowsima. ukucajte:
+
+sudo snap install discord
+
+I onda samo pokrenite discord naredbom:
+
+sudo /snap/bin/discord
+
+AKo zelite slusati glazbu, mozete npr instalirati Clementine:
+
+sudo apt install clementine
+
+Ako zelite video preglednik, mozete instalirat VLC:
+
+sudo snap install vlc
+
+Ako vam treba torrent klijent:
+
+sudo apt install transmission
+
+Ako vam treba menadzer arhiva:
+
+sudo apt install file-roller
+
+Za rar fajlove mozete instalirati:
+
+sudo apt install unrar
+
+Ono sto je disk manager u windowsima, na linuxu je gparted:
+
+sudo apt install gparted
+
+Ako vam treba linux photoshop:
+
+sudo apt install gimp
+
+Ako vam treba gdrive, pratite slijedeci set komandi, samo umjesto username napisite svoje korisnicko ime:
+
+sudo add-apt-repository ppa:alessandro-strada/ppa
+
+sudo apt install google-drive-ocamlfuse
+
+mkdir /home/username/google-drive
+
+google-drive-ocamlfuse /home/username/google-drive
+
+Donja komanda ce vam izlistati sve korisnike na kompu, koji nisu sistemski korisnici:
+
+sudo awk -F':' '{if ($3 >= 1000 && $3 != 65534) print $1}' /etc/shadow
+
+Sad mozet ukucat:
+
+sudo nano /etc/security/access.conf
+
+I editirati tu datoteku sa:
+
++:yourusername:LOCAL
+
++:root:tty1
+
+-:ALL:ALL
+
+Sa gornjim editom, dozvolili ste samo sebi da se ulogirate, i to samo lokalno, ne sa mreze. Dozvolili ste i rootu da se ulogira na terminal i zabranili ste logon svima ostalima od bilo kuda. Ako imate jos korisnika, dodajte i njih.
+
+Sad mozete ukucati reboot i naci se u grafickom sucelju xfce4. Prije nego ukucate svoju lozinku, kliknite na bijelo dugme, i promijenite na xfce4.
+
+Ako vam se ne svidja xfce4, mozete instalirati neki drugi. Npr :
+
+sudo apt install kubuntu-desktop
+
+Nakon svog ovog mucenja, mozete nabacit neku igru. Instalirajte steam naredbom:
+
+sudo apt install steam
+
+Dakle uber je jednostavno, samo instalirate pakete koji su vam potrebni, i ako vam neka komanda ne radi, to je vjerojatno zato jer linux razlikuje velika i mala slova. Morate izricito i precizno napisati sto zelite. Repozitoriji, odnosno izvori paketa se razlikuju po tome koliko je koji paket provjeren od strane community-a. Kod drugih distroa jedina je razlika sto necete koristiti apt, vec npr pac komandu.
+
+To bi bilo to. Uzivajte!

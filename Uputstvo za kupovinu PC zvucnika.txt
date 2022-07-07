@@ -1,0 +1,21 @@
+Dakle, ako niste audiofil, tj ne znate verbalizirati razliku između onoga što čujete, ali kužite što zvuči dobro, a što loše, spadate u većinu ljudi.
+
+Osnovna stvar kod zvučnika su sistemi. Postoje 1-way, 2-way i 3-way sistemski zvučnici.
+
+1-way znači da i visoki i srednji i duboki zvukovi idu kroz isti izlaz ili zvučnik/e.
+
+3-way znači da visoki imaju svoj zvučnik, malecni, još zvan tweeter, srednji imaju svoj, srednje veličine, i duboki imaju svoj, veliki zvučnik, još zvan subwoofer.
+
+Specifičnost basova, odnosno dubokih zvukova je da ne možete odrediti odakle dolaze.
+
+Dakle, s obzirom da je skoro nemoguće naći 2.0 3-way zvučnike, najbolje vam je kupiti 2.1 zvučnike, odnosno 2 satelita i subwoofer.
+
+Na satelitima je tweeter, za visoke i srednji zvučnik za srednje zvukove, a subwoofer je za duboke zvukove.
+
+S obzirom da ne mozete odrediti odakle dolaze duboki zvukovi, mozete subwoofer drzati na podu, ispod stola npr, a satelite sa svake strane monitora.
+
+Jos jedna razlika je pasivni i aktivni zvucnici. Pasivni znaci da dolaze bez ugradjenog pojacala i trebat ce vam dodatno pojacalo.
+
+Sto se snage zvucnika tice, recimo da je za prostor tipa automobil ili manja soba 25W sinusne snage vise nego dovoljno.
+
+Trenutno, kod nas su najjeftiniji takvi zvučnici Trust Tytan i Genesis Helium, cijene nešto niže od 500kn.
